@@ -19,17 +19,26 @@
     </nav>
   </header>
   
-  <div class="popup-forms" id="login">
-    <form class="form-container">
+  <section class="popup-forms" id="login">
+    <div class="form-header container">
       <h2>Log in</h2>
-      <label for="email"><p class="labels">Email</p></label>
-      <input type="email" required placeholder="myemail@email.com"/>
-      <label for="password"><p class="labels">Password</p></label>
+      <button type="button" onclick="closeform()"><img src="files/images/cancel_btn.png"/></button>
+    </div>
+    <form class="form-container">
+      <div class="input-forms">
+        <label for="email"><p class="labels">Email</p></label>
+        <input type="email" required placeholder="ex: juandelacruz@email.com" />
+      </div>
+      <div class="input-forms">
+        <label for="password"><p class="labels">Password</p></label>
       <input type="password" required />
-      <button type="submit" class="btn">Log in</button>
+      </div>
+      <div class="action-buttons">
+        <button type="submit" class="btn">Log in</button>
       <button type="button" class="btn cancel" onclick="closeform()">Cancel</button>
+      </div>
     </form>
-  </div>
+  </section>
   
   <script src="forms.js"></script>
 </body>

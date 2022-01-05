@@ -31,48 +31,65 @@ li{
   flex-flow: row wrap;
 }
 .popup-forms{
-  display: none;
   height: 350px;
-  width: 250;
-  margin: 50px 30px;
-  background-color: ghostwhite;
-  box-shadow: 5px 5px 10px grey;
+  width: 270px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-color: floralwhite;
 }
-.form-container{
-  display: inline-block;
-  padding: 10px;
+.form-header{
+  padding: 20px 20px 10px 20px;
 }
-.form-container h2{
-  margin: 10px;
-  font-size: 1.7em;
+.form-header h2{
+  font-size: 1.6em;
   font-weight: 900;
+  letter-spacing: 0.09em;
 }
-.form-container input[type=email], .form-container input[type=password]{
-  width: 100%;
-  background-color: whitesmoke;
-  font-size: 1.1em;
-}
-.labels{
-  font-size: 1.0em;
-  font-weight: 300;
-  margin: 5px 15px;
-}
-.form-container .btn{
-  background-color: #646CCB;
-  width: 100%;
-  margin-top: 20px;
-  padding: 16px 20px;
-  color: whitesmoke;
+.form-header button{
   border: none;
-  cursor: pointer;
-  font-size: 1.2em;
-  opacity: 0.9;
+  background-color: floralwhite;
 }
-.form-container .cancel{
-  background-color: #DE2828;
+.form-header button img{
+  height: 25px;
+  width: 25px;
 }
-.form-container .btn :hover{
-  opacity: 0.1;
+.form-header img :hover{
+  color: red;
+}
+.input-forms{
+  padding: 20px 20px 10px 20px;
+}
+.input-forms .labels{
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+.input-forms input{
+  width: 100%;
+  height: 27px;
+  font-size: 1.0em;
+  font-weight: 600;
+  font-family: gowung;
+}
+.action-buttons{
+  padding: 20px 20px 10px 20px;
+}
+.btn{
+  width: 100%;
+  height: 28px;
+  margin: 5px 5px 10px 5px;
+  background-color: #3D47B5;
+  color: white;
+  border: none;
+  font-family: gowung;
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+.btn :hover{
+  opacity: 1;
 }
 
 /* header styles*/
