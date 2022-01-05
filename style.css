@@ -1,14 +1,92 @@
 
 /*Reset Styles */
-body, h1, p{
+body, h1, h2, p, ul, li, a{
   margin: 0px;
   padding: 0px;
-  
+  font-style: normal;
+  font-weight: normal;
+  font-family: gowung;
+}
+a{
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style-type: none;
 }
 
 
 /* Add custom font */
 @font-face{
   font-family: gowung;
-  src: url(files/)
+  src: url(files/GowunBatang-Regular.ttf);
+}
+
+/*General styles */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.popup-forms{
+  display: none;
+  height: 350px;
+  width: 250;
+  margin: 50px 30px;
+  background-color: ghostwhite;
+  box-shadow: 5px 5px 10px grey;
+}
+.form-container{
+  display: inline-block;
+  padding: 10px;
+}
+.form-container h2{
+  margin: 10px;
+  font-size: 1.7em;
+  font-weight: 900;
+}
+.form-container input[type=email], .form-container input[type=password]{
+  width: 100%;
+  background-color: whitesmoke;
+  font-size: 1.1em;
+}
+.labels{
+  font-size: 1.0em;
+  font-weight: 300;
+  margin: 5px 15px;
+}
+.form-container .btn{
+  background-color: #646CCB;
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px 20px;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+.form-container .cancel{
+  background-color: #DE2828;
+}
+.form-container .btn :hover{
+  opacity: 0.1;
+}
+
+/* header styles*/
+.header-nav{
+  background-color: #3D47B5;
+  padding: 15px 20px 15px 20px;
+  color: whitesmoke;
+}
+nav a{
+  color: whitesmoke;
+  margin: 5px;
+  font-size: 0.9em;
+}
+h1{
+  font-size: 1.5em;
+  font-weight: 800;
 }

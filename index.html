@@ -10,14 +10,28 @@
 
 <body>
   
-  <header>
+  <header class="header-nav container">
     <h1>Block Market</h1>
     
     <nav>
-      <p>Log In</p>
+       <a onclick="openlogin()">Log in</a>
+       <a href="">Sign up</a>
     </nav>
   </header>
-
+  
+  <div class="popup-forms" id="login">
+    <form class="form-container">
+      <h2>Log in</h2>
+      <label for="email"><p class="labels">Email</p></label>
+      <input type="email" required placeholder="myemail@email.com"/>
+      <label for="password"><p class="labels">Password</p></label>
+      <input type="password" required />
+      <button type="submit" class="btn">Log in</button>
+      <button type="button" class="btn cancel" onclick="closeform()">Cancel</button>
+    </form>
+  </div>
+  
+  <script src="forms.js"></script>
 </body>
 
 </html>
