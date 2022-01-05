@@ -1,0 +1,14 @@
+
+/*Reset Styles */
+body, h1, p{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+/* Add custom font */
+@font-face{
+  font-family: gowung;
+  src: url(files/)
+}
