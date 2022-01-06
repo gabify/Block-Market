@@ -15,7 +15,7 @@
     
     <nav>
        <a onclick="openlogin()">Log in</a>
-       <a href="">Sign up</a>
+       <a onclick="opensignup()">Sign up</a>
     </nav>
   </header>
   
@@ -35,7 +35,36 @@
       </div>
       <div class="action-buttons">
         <button type="submit" class="btn">Log in</button>
-      <button type="button" class="btn cancel" onclick="closeform()">Cancel</button>
+      <button type="button" class="btn" onclick="opensignup()">Sign up</button>
+      </div>
+    </form>
+  </section>
+  
+  <section class="popup-forms" id="signup">
+    <div class="form-header container">
+      <h2>Sign up</h2>
+      <button type="button" onclick="closeSignUpform()"><img src="files/images/cancel_btn.png"/></button>
+    </div>
+    <form class="form-container">
+      <div class="input-forms">
+        <label for="username"><p class="labels">Username</p></label>
+        <input type="text" required placeholder="ex: juandelacruz" />
+      </div>
+      <div class="input-forms">
+        <label for="email"><p class="labels">Email</p></label>
+        <input type="email" required placeholder="ex: juandelacruz@email.com" />
+      </div>
+      <div class="input-forms">
+        <label for="password"><p class="labels">Password</p></label>
+      <input type="password" required placeholder="Must be atleast 8 characters"/>
+      </div>
+      <div class="input-forms">
+        <label for="Retype Password"><p class="labels">Retype Password</p></label>
+      <input type="password" required />
+      </div>
+      <div class="action-buttons">
+        <button type="submit" class="btn">Sign up</button>
+        <button type="button" class="btn" onclick="openlogin()">Log in</button>
       </div>
     </form>
   </section>

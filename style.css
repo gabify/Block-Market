@@ -30,9 +30,18 @@ li{
   justify-content: space-between;
   flex-flow: row wrap;
 }
-.popup-forms{
-  height: 350px;
+#login{
+  height: auto;
   width: 270px;
+}
+#signup{
+  height: auto;
+  width: 270px;
+}
+.popup-forms{
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: none;
   margin-left: auto;
   margin-right: auto;
