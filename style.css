@@ -30,6 +30,10 @@ li{
   justify-content: space-between;
   flex-flow: row wrap;
 }
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
 #login{
   height: auto;
   width: 270px;
@@ -70,7 +74,7 @@ li{
   color: red;
 }
 .input-forms{
-  padding: 20px 20px 10px 20px;
+  padding: 15px 20px 5px 20px;
 }
 .input-forms .labels{
   font-size: 0.9em;
@@ -115,4 +119,36 @@ nav a{
 h1{
   font-size: 1.5em;
   font-weight: 800;
+}
+
+/* Search bar styles */
+.search-tab{
+  height: auto;
+  width: auto;
+  align-items: center;
+  margin: 10px 20px 10px 20px;
+  border: solid grey;
+  border-radius: 12px;
+}
+.search-tab input{
+  grid-column: 1/5;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: ghostwhite;
+  font-family: gowung;
+  font-size: 0.9em;
+  padding: 3px;
+}
+.search-tab button{
+  grid-column: 6/7;
+  background-color: #3D47B5;
+  border:none;
+  border-radius: 10px;
+  padding: 5px;
+}
+.search-tab button img{
+  height: 25px;
+  width: 25px;
 }
