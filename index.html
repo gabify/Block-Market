@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Block Market</title>
+</head>
+
+<body>
+  
+  <header class="header-nav container">
+    <h1>Block Market</h1>
+    
+    <nav>
+       <a onclick="openlogin()">Log in</a>
+       <a onclick="opensignup()">Sign up</a>
+    </nav>
+  </header>
+  
+  <section class="popup-forms" id="login">
+    <div class="form-header container">
+      <h2>Log in</h2>
+      <button type="button" onclick="closeform()"><img src="files/images/cancel_btn.png"/></button>
+    </div>
+    <form class="form-container">
+      <div class="input-forms">
+        <label for="email"><p class="labels">Email</p></label>
+        <input type="email" required placeholder="ex: juandelacruz@email.com" />
+      </div>
+      <div class="input-forms">
+        <label for="password"><p class="labels">Password</p></label>
+      <input type="password" required />
+      </div>
+      <div class="action-buttons">
+        <button type="submit" class="btn">Log in</button>
+      <button type="button" class="btn" onclick="opensignup()">Sign up</button>
+      </div>
+    </form>
+  </section>
+  
+  <section class="hero-image">
+    <div class="hero-text">
+      <h3>All in one marketplace</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis dolor vitae purus finibus semper.</p>
+      <button type="button" class="btn action-btn">Buy now</button>
+    </div>
+  </section>
+  
+  <section class="popup-forms" id="signup">
+    <div class="form-header container">
+      <h2>Sign up</h2>
+      <button type="button" onclick="closeSignUpform()"><img src="files/images/cancel_btn.png"/></button>
+    </div>
+    <form class="form-container">
+      <div class="input-forms">
+        <label for="username"><p class="labels">Username</p></label>
+        <input type="text" required placeholder="ex: juandelacruz" />
+      </div>
+      <div class="input-forms">
+        <label for="email"><p class="labels">Email</p></label>
+        <input type="email" required placeholder="ex: juandelacruz@email.com" />
+      </div>
+      <div class="input-forms">
+        <label for="password"><p class="labels">Password</p></label>
+      <input type="password" required placeholder="Must be atleast 8 characters"/>
+      </div>
+      <div class="input-forms">
+        <label for="Retype Password"><p class="labels">Retype Password</p></label>
+      <input type="password" required />
+      </div>
+      <div class="action-buttons">
+        <button type="submit" class="btn">Sign up</button>
+        <button type="button" class="btn" onclick="openlogin()">Log in</button>
+      </div>
+    </form>
+  </section>
+  
+  <!---<section class="search-tab grid-container">
+    <input type="search" placeholder="search anything here...">
+    <button type="button"><img src="files/images/search_btn.png"/></button>
+  </section>-->
+  
+  <section class="product-category">
+    <h3>What Do We Sell?</h3>
+    <div class="grid-container products">
+      <div class="category-1 category-container grid-container">
+        <img class="category-items" src="files/images/category-items-1.png"/>
+        <p class="category-label">Category Item 1</p>
+      </div>
+      <div class="category-2 category-container grid-container">
+        <img class="category-items" src="files/images/category-items-2.png"/>
+        <p class="category-label">Category Item 2</p>
+      </div>
+      <div class="category-3 category-container grid-container">
+        <img class="category-items" src="files/images/category-items-3.gif" />
+        <p class="category-label">Category Item 3</p>
+      </div>
+      <div class="category-4 category-container grid-container">
+        <img class="category-items" src="files/images/category-items-4.png" />
+        <p class="category-label">Category Item 4</p>
+      </div>
+      <div class="category-5 category-container grid-container">
+        <img class="category-items" src="files/images/category-items-5.png" />
+        <p class="category-label">Category Item 5</p>
+      </div>
+    </div>
+  </section>
+  
+  <script src="forms.js"></script>
+</body>
+
+</html>
