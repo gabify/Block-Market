@@ -1,0 +1,22 @@
+{
+  "name": "block-market",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabify/Block-Market.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabify/Block-Market/issues"
+  },
+  "homepage": "https://github.com/gabify/Block-Market#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
